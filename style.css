@@ -1,0 +1,308 @@
+
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f4;
+}
+
+/* Header */
+header {
+    background-color: #14532d;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p {
+    margin-bottom: 15px;
+}
+
+/* Navigation */
+.navbar {
+    margin-top: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #2e7d32;
+}
+
+/* Main sections */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin: 30px 0;
+}
+
+section h2 {
+    text-align: center;
+    color: #14532d;
+    margin-bottom: 20px;
+}
+
+/* Welcome section */
+.welcome-section {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.welcome-section p {
+    margin-bottom: 15px;
+}
+
+/* Learn more link */
+.learn-more {
+    display: inline-block;
+    background-color: #14532d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #2e7d32;
+}
+
+/* Highlights and cards */
+.highlights {
+    padding: 20px 0;
+}
+
+.highlight-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.highlight-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.highlight-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.highlight-card h3 {
+    color: #14532d;
+    margin-bottom: 10px;
+}
+
+.highlight-card p {
+    margin-bottom: 10px;
+}
+
+.highlight-card ul {
+    padding-left: 20px;
+}
+
+/* Announcements */
+.announcements {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.announcements ul {
+    padding-left: 25px;
+}
+
+/* Quick links */
+.quick-links {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.quick-link-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.quick-link-container a {
+    background-color: #14532d;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.quick-link-container a:hover {
+    background-color: #2e7d32;
+}
+
+/* Contact form */
+.contact-form-section {
+    background-color: white;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+form {
+    max-width: 700px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #2e7d32;
+    border-color: #2e7d32;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #14532d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #2e7d32;
+}
+
+/* Footer */
+footer {
+    background-color: #14532d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+    .highlight-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        padding: 8px 15px;
+    }
+
+    main {
+        width: 94%;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .welcome-section,
+    .contact-form-section {
+        padding: 20px 15px;
+    }
+
+    .highlight-card {
+        padding: 15px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+/* Responsive county image */
+.county-image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Prevent elements from exceeding screen width */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
